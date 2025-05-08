@@ -1,0 +1,103 @@
+/**
+    * @author  EliasDH Team
+    * @see https://eliasdh.com
+    * @since 01/01/2025
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Old%20Italic:700|Noto%20Sans%20Old%20Italic:400');
+
+/* Global Styles */
+:root[data-theme="dark"] {
+    --text: #ebe9fc;
+    --background: #010104;
+    --primary: #d9d9d8;
+    --secondary: #8c6e2b;
+    --accent: #141414;
+}
+
+:root[data-theme="light"] {
+    --text: #050315;
+    --background: #fbfbfe;
+    --primary: #272726;
+    --secondary: #d4b674;
+    --accent: #eaeaea;
+}
+
+:root {
+    --radius: 12px;
+    --spacing: 16px;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+/* Global Styles */
+
+/* Cursor */
+* {
+    cursor: url('/assets/media/svg/cursor-auto.svg'), auto;
+}
+
+.cursor-default {
+    cursor: url('/assets/media/svg/cursor-default.svg'), default;
+}
+
+.cursor-pointer {
+    cursor: url('/assets/media/svg/cursor-pointer.svg'), pointer;
+}
+/* Cursor */
+
+/* Global Body */
+body {
+    background-color: var(--secondary);
+    font-family: 'Noto Sans Old Italic', Arial;
+    font-weight: 400;
+}
+/* Global Body */
+
+/* Global Selection */
+::selection {
+    background-color: var(--primary);
+    color: var(--text);
+}
+/* Global Selection */
+
+/* Global Selection */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: var(--radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-resizer {
+    display: none;
+}
+/* Global Selection */
