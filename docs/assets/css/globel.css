@@ -4,8 +4,6 @@
     * @since 01/01/2025
 **/
 
-@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Old%20Italic:700|Noto%20Sans%20Old%20Italic:400');
-
 /* Global Styles */
 :root[data-theme="dark"] {
     --text: #ebe9fc;
@@ -24,8 +22,6 @@
 }
 
 :root {
-    --radius: 12px;
-    --spacing: 16px;
     --shadow: rgba(0, 0, 0, 0.1);
 }
 /* Global Styles */
@@ -46,16 +42,17 @@
 
 /* Global Body */
 body {
-    background-color: var(--secondary);
-    font-family: 'Noto Sans Old Italic', Arial;
+    background-color: var(--background);
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 400;
+    margin: 0;
 }
 /* Global Body */
 
 /* Global Selection */
 ::selection {
     background-color: var(--primary);
-    color: var(--text);
+    color: var(--accent);
 }
 /* Global Selection */
 

@@ -6,3 +6,167 @@
 
 @import url('/assets/css/globel.css');
 
+.index-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 4px var(--shadow);
+    background-color: var(--background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.index-header img {
+    height: 50px;
+    padding: 10px 20px;
+}
+
+.index-main {
+    max-width: 1000px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.index-title {
+    margin-top: 150px;
+    margin-left: 50px;
+    width: -webkit-fit-content;
+    width: fit-content;
+    max-width: 1160px;
+    padding: 0;
+    background: linear-gradient(70deg, var(--primary) 0, var(--primary) 55%, var(--secondary) 100%);
+    background-clip: text;
+    font-size: clamp(2rem, 1.5993rem + 1.6438vw, 3.5rem);
+    line-height: normal;
+    -webkit-text-fill-color: transparent
+}
+
+.index-image {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    max-width: 1000px;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.index-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.index-article {
+    margin-left: 80px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.index-section {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    border-bottom: 4px solid var(--secondary);
+    margin-bottom: 20px;
+}
+
+.index-section:hover {
+    transform: scale(1.01);
+}
+
+.index-policy-section {
+    background-color: var(--background);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.index-policy-section h2 {
+    color: var(--primary);
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.index-policy-section h3 a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.index-policy-section h3 a:hover {
+    text-decoration: underline;
+}
+
+.index-policy-section p {
+    color: #666666;
+    font-size: 0.9em;
+    margin: 5px 0 0 0;
+}
+
+@media (max-width: 1300px) {
+    .index-header {
+        padding: 10px;
+    }
+
+    .index-title {
+        display: none;
+    }
+
+    .index-image {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .index-article {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .index-section {
+        padding: 15px;
+    }
+
+    .index-policy-section {
+        padding: 10px;
+    }
+
+    .index-policy-section h2 {
+        font-size: 1em;
+    }
+
+    .index-policy-section h3 a {
+        font-size: 0.9em;
+    }
+
+    .index-policy-section p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .index-header {
+        padding: 5px;
+    }
+
+    .index-main {
+        padding: 10px;
+    }
+
+    .index-section {
+        padding: 10px;
+    }
+
+    .index-policy-section {
+        padding: 8px;
+    }
+}
