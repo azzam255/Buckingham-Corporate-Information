@@ -34,8 +34,8 @@ function updateHeaderImage() {
     const currentTheme = htmlElement.getAttribute('data-theme');
     const headerImage = document.querySelector('img');
 
-    if (currentTheme === 'dark') headerImage.src = '/assets/media/images/banner-white.png';
-    else if (currentTheme === 'light') headerImage.src = '/assets/media/images/banner-black.png';
+    if (currentTheme === 'dark') headerImage.src = '/Buckingham-Corporate-Information/assets/media/images/banner-white.png';
+    else if (currentTheme === 'light') headerImage.src = '/Buckingham-Corporate-Information/assets/media/images/banner-black.png';
 }
 
 setInterval(updateHeaderImage, 100);

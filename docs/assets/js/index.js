@@ -6,5 +6,5 @@
 
 // Load external content
 document.addEventListener('DOMContentLoaded', function() {
-    loadExternalContent("context-menu", "/assets/includes/context-menu.html");
+    loadExternalContent("context-menu", "/Buckingham-Corporate-Information/assets/includes/context-menu.html");
 });
