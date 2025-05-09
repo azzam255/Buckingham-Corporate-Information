@@ -2,6 +2,6 @@ User-agent: *
 Allow: index.html
 Allow: /assets/
 
-Sitemap: https://ci.buckingham.eliasdh.com/sitemap.xml
+Sitemap: https://ci.buckingham.ac.uk/sitemap.xml
 
 Crawl-delay: 5
