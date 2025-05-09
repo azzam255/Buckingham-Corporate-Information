@@ -227,15 +227,13 @@
         font-size: clamp(1.8rem, 1.4993rem + 1.2438vw, 2.5rem);
     }
 
-    .article-text {
-        margin-top: 15px;
+
+
+    .article-section {
+        margin: 0;
     }
 
-    .article-section-title {
-        font-size: clamp(1.3rem, 1.1993rem + 0.6438vw, 1.8rem);
-    }
-
-    .article-legend {
+    .article-nav {
         display: none;
     }
 

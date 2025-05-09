@@ -12,13 +12,21 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.article-section');
     const legendLinks = document.querySelectorAll('.article-nav-link');
+    const header = document.querySelector('.article-header');
+    const headerHeight = header ? header.offsetHeight : 0;
 
     legendLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = link.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+
+            const offsetTop = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
 
             legendLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
