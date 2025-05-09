@@ -32,15 +32,15 @@
 
 /* Cursor */
 * {
-    cursor: url('/assets/media/svg/cursor-auto.svg'), auto;
+    cursor: url('/Buckingham-Corporate-Information/assets/media/svg/cursor-auto.svg'), auto;
 }
 
 .cursor-default {
-    cursor: url('/assets/media/svg/cursor-default.svg'), default;
+    cursor: url('/Buckingham-Corporate-Information/assets/media/svg/cursor-default.svg'), default;
 }
 
 .cursor-pointer {
-    cursor: url('/assets/media/svg/cursor-pointer.svg'), pointer;
+    cursor: url('/Buckingham-Corporate-Information/assets/media/svg/cursor-pointer.svg'), pointer;
 }
 /* Cursor */
 
