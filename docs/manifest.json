@@ -1,6 +1,6 @@
 {
-    "name": "Buckingham Corporate Information",
-    "short_name": "Buckingham Corporate Information",
+    "name": "IT Corporate Information",
+    "short_name": "IT Corporate Information",
     "description": "The University of Buckingham corporate information website, offering transparent access to governance, policies and academic data.",
     "start_url": "/",
     "display": "standalone",

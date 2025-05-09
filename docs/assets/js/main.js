@@ -28,3 +28,14 @@ function loadExternalContent(DivId, url) {
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
+
+function updateHeaderImage() {
+    const htmlElement = document.documentElement;
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const headerImage = document.querySelector('img');
+
+    if (currentTheme === 'dark') headerImage.src = '/assets/media/images/banner-white.png';
+    else if (currentTheme === 'light') headerImage.src = '/assets/media/images/banner-black.png';
+}
+
+setInterval(updateHeaderImage, 100);
